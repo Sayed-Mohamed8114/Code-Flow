@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+
+@layer utilities {
+    /*both it combine between the forwards and backwords together */
+    .animate-in{
+        animation-fill-mode: both;
+    }
+
+    .slide-in-from-top{
+        animation-name: slideInFromTop;
+    }
+
+    .slide-out-to-top{
+        animation-name: slideOutToTop;
+    }
+
+    .duration-700{
+        animation-duration: 700ms;
+    }
+}
+
+@keyframes slideInFromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes slideOutToTop {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
