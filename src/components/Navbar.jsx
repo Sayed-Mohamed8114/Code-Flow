@@ -25,6 +25,7 @@ export default function Navbar() {
                 className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 my-2"
               />
             </div>
+            {/*we use span because it is come without any padding or margin and can edit in it without any problem*/}
             <span className="text-lg sm:text-xl md:text-2xl font-medium">
               <span className="text-white">Code</span>
               <span className="text-blue-400">Flow</span>
